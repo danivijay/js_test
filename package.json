@@ -3,12 +3,10 @@
   "version": "1.0.0",
   "description": "JavaScript Development Environment by Dani Vijay",
     "scripts": {
-      "prestart" : "node buildScripts/startMessage.js",
-      "start" : "npm-run-all --parallel security-check open:src",
-      "open:src": "node buildScripts/srcServer.js",
-      "secuirity-check": "nsp check",
-      "localtunnel" : "npm-run-all --parallel open:src share",
-      "share": "lt --port 3000 --subdomain dani"
+      "prestart": "node buildScripts/startMessage.js",
+      "start": "node buildScripts/srcServer.js",
+      "security-check": "nsp check",
+      "share": "lt --port 3000"
   },
   "author": "Dani Vijay",
   "license": "GNU General Public License v3.0",
